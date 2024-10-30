@@ -25,6 +25,9 @@ public class RenombrarDirectorios {
         for (File directorioFile : directoriosArchivosInternos){
             if (directorioFile.isDirectory()){
                 String nombreOriginal = directorioFile.getName();
+                String nuevoNombre = "nuevo -" + nombreOriginal;
+                File nuevoDirectorio = new File(directorioFile.getParent(), nuevoNombre);
+                
             }
         }
     }
